@@ -1,0 +1,15 @@
+.button {
+	@apply flex justify-center items-center bg-sky-400 hover:bg-sky-600 rounded-lg text-white size-14 disabled:bg-neutral-400 dark:disabled:bg-neutral-600 text-xl duration-200 ease-in-out;
+
+	& svg {
+		@apply size-7;
+	}
+}
+
+.active {
+	@apply bg-sky-600;
+}
+
+// & button {
+// 	@apply hover:bg-blue-600 rounded-lg text-white size-14 disabled:bg-neutral-400 dark:disabled:bg-neutral-600 text-xl;
+// }

@@ -1,0 +1,7 @@
+.button {
+	@apply flex justify-center items-center  text-blue-400;
+}
+
+.active {
+	@apply bg-red-500;
+}

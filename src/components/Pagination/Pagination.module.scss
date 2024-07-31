@@ -1,0 +1,7 @@
+.pagination {
+	@apply flex justify-center items-center space-x-2 p-5 duration-200 dark:bg-black dark:bg-opacity-90 text-xl;
+
+	@media (max-width: 640px) {
+		@apply space-x-1 p-3 text-lg;
+	}
+}

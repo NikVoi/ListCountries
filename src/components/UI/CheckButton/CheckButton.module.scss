@@ -1,0 +1,30 @@
+.toggle {
+	@apply relative w-20 flex justify-center items-center;
+}
+
+label {
+	@apply absolute w-full h-12 bg-light rounded-full cursor-pointer;
+}
+
+.check {
+	@apply absolute hidden;
+}
+
+.slider {
+	@apply absolute w-full h-full rounded-full transition duration-300;
+}
+
+.check:checked ~ .slider {
+	@apply bg-dark;
+}
+
+.slider::before {
+	@apply absolute top-2 left-2 w-8 h-8 rounded-full bg-light transition duration-300;
+	content: '';
+	box-shadow: inset 28px -4px 0px 0px theme('colors.dark');
+}
+
+.check:checked ~ .slider::before {
+	@apply transform translate-x-8 bg-light;
+	box-shadow: none;
+}

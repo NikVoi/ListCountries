@@ -1,0 +1,8 @@
+.dashboard {
+	@apply flex justify-between flex-col h-full;
+}
+
+.darkMode {
+	background-color: #000;
+	color: #fff;
+}
